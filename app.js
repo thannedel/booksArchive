@@ -20,13 +20,20 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
+//Body Parser
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
+
 //Set static folder
 app.use(express.static(path.join(__dirname, 'public')))
 
+//Index route
+app.get('/', (req, res) => res.render('index', {
+    layout: 'landing'
+}));
 
-app.get('/', (req, res) => res.send('index'));
-
-// Gig routes
+// Book routes
 app.use('/books', require('./routes/books'));
 
 const PORT = process.env.PORT || 5000;

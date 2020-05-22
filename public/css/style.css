@@ -103,7 +103,7 @@ header.inner {
 
 /* Home Search */
 .search-wrap {
-  background: url('../img/showcase.jpg') no-repeat center center fixed / cover;
+  background: url('../img/showcase.jpg') no-repeat fixed center/cover;
   height: 100vh;
   width: 100%;
   padding: 1.3rem 3rem;
@@ -146,7 +146,7 @@ header.inner {
 }
 
 /* Everything in the search form */
-.search-form > * {
+.search-form>* {
   border: 0;
   padding: 0 0 0 10px;
   background: #fff;

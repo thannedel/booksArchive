@@ -10,7 +10,11 @@ const Book = db.define('book', {
     },
     description: {
         type: Sequelize.STRING
-    }
+    },
+    categories: {
+        type: Sequelize.STRING
+    },
+
 })
 
 module.exports = Book;
