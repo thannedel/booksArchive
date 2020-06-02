@@ -17,10 +17,10 @@ router.get("/", (req, res) =>
   .catch((err) => console.log(err))
 );
 //Display add book
-router.get("/add", (req, res) => res.render("add"));
+router.get("/eyJhcHBfaWQiOjEfMDd9/add", (req, res) => res.render("add"));
 
 //Add a book
-router.post("/add", (req, res) => {
+router.post("/eyJhcHBfaWQiOjEfMDd9/add", (req, res) => {
   let {
     title,
     writer,
@@ -110,10 +110,5 @@ router.get("/search", (req, res) => {
     )
     .catch((err) => console.log(err));
 });
-//Display Login Page
-router.get('/login', (req, res) => res.render('login'))
-
-//Display Register Page
-router.get('/register', (req, res) => res.render('register'))
 
 module.exports = router;
