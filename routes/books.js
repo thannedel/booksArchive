@@ -17,10 +17,10 @@ router.get("/", (req, res) =>
   .catch((err) => console.log(err))
 );
 //Display add book
-router.get("/eyJhcHBfaWQiOjEfMDd9/add", (req, res) => res.render("add"));
+router.get("/add", (req, res) => res.render("add"));
 
 //Add a book
-router.post("/eyJhcHBfaWQiOjEfMDd9/add", (req, res) => {
+router.post("/add", (req, res) => {
   let {
     title,
     writer,
